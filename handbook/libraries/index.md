@@ -205,12 +205,12 @@ title: "Standard Library"
   <tr>
     <td>
       <ul>
-        <li><strong>deg</strong> - the angle in degrees</li>
+        <li><strong>degrees</strong> - the angle in degrees</li>
       </ul>
     </td>
     <td>
       <code>// r calculated to 1
-        r = math/sin[deg: 90]</code>
+        r = math/sin[degrees: 90]</code>
     </td>
   </tr>
 
@@ -223,12 +223,12 @@ title: "Standard Library"
   <tr>
     <td>
       <ul>
-        <li><strong>deg</strong> - the angle in degrees</li>
+        <li><strong>degrees</strong> - the angle in degrees</li>
       </ul>
     </td>
     <td>
       <code>// r calculated to 0
-        r = math/cos[deg: 90]</code>
+        r = math/cos[degrees: 90]</code>
     </td>
   </tr>
 
@@ -241,12 +241,12 @@ title: "Standard Library"
   <tr>
     <td>
       <ul>
-        <li><strong>deg</strong> - the angle in degrees</li>
+        <li><strong>degrees</strong> - the angle in degrees</li>
       </ul>
     </td>
     <td>
       <code>// r calculated to 1
-        r = math/tan[deg: 45]</code>
+        r = math/tan[degrees: 45]</code>
     </td>
   </tr>
 
