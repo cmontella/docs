@@ -34,7 +34,7 @@ title: "Standard Library"
     <td>
       <code>// sorts the students by GPA
         [#student GPA]
-        index = sort[value: GPA]</code>
+        index = sort[for: GPA]</code>
     </td>
   </tr>
 
