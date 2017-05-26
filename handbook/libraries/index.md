@@ -23,8 +23,8 @@ title: "Standard Library"
     </td>
     <td>
       <code>// sorts the students by GPA
-[#student GPA]
-index = sort[value: GPA]</code>
+        [#student GPA]
+        index = sort[for: GPA]</code>
     </td>
   </tr>
 
@@ -42,8 +42,8 @@ index = sort[value: GPA]</code>
     </td>
     <td>
       <code>// counts the number of citizens in each state
-residents = [#citizen state]
-population = count[given: residents, per: state]</code>
+        residents = [#citizen state]
+        population = count[given: residents, per: state]</code>
     </td>
   </tr>
 
@@ -63,8 +63,8 @@ population = count[given: residents, per: state]</code>
     </td>
     <td>
       <code>// returns the sum of salaries for each department
-employees = [#employee salary department]
-expenses = gather/sum[for: employees, value: employees.salary, per: department]</code>
+        employees = [#employee salary department]
+        expenses = gather/sum[for: employees, value: employees.salary, per: department]</code>
     </td>
   </tr>
 </table>
@@ -148,7 +148,7 @@ expenses = gather/sum[for: employees, value: employees.salary, per: department]<
     </td>
     <td>
       <code>// x rounded down to 34
-x = math/floor[value: 34.2]</code>
+        x = math/floor[value: 34.2]</code>
     </td>
   </tr>
 
@@ -166,7 +166,7 @@ x = math/floor[value: 34.2]</code>
     </td>
     <td>
       <code>// x rounded up to 35
-x = math/ceiling[value: 34.2]</code>
+        x = math/ceiling[value: 34.2]</code>
     </td>
   </tr>
 
@@ -184,7 +184,7 @@ x = math/ceiling[value: 34.2]</code>
     </td>
     <td>
       <code>// x rounded to 34
-x = math/floor[value: 34.2]</code>
+        x = math/floor[value: 34.2]</code>
     </td>
   </tr>
 
@@ -197,12 +197,12 @@ x = math/floor[value: 34.2]</code>
   <tr>
     <td>
       <ul>
-        <li><strong>deg</strong> - the angle in degrees</li>
+        <li><strong>degrees</strong> - the angle in degrees</li>
       </ul>
     </td>
     <td>
       <code>// r calculated to 1
-r = math/sin[deg: 90]</code>
+        r = math/sin[degrees: 90]</code>
     </td>
   </tr>
 
@@ -215,12 +215,12 @@ r = math/sin[deg: 90]</code>
   <tr>
     <td>
       <ul>
-        <li><strong>deg</strong> - the angle in degrees</li>
+        <li><strong>degrees</strong> - the angle in degrees</li>
       </ul>
     </td>
     <td>
       <code>// r calculated to 0
-r = math/cos[deg: 90]</code>
+        r = math/cos[degrees: 90]</code>
     </td>
   </tr>
 
@@ -233,12 +233,12 @@ r = math/cos[deg: 90]</code>
   <tr>
     <td>
       <ul>
-        <li><strong>deg</strong> - the angle in degrees</li>
+        <li><strong>degrees</strong> - the angle in degrees</li>
       </ul>
     </td>
     <td>
       <code>// r calculated to 1
-r = math/tan[deg: 45]</code>
+        r = math/tan[degrees: 45]</code>
     </td>
   </tr>
 
@@ -257,8 +257,8 @@ r = math/tan[deg: 45]</code>
     </td>
     <td>
       <code>// takes the higher score
-[#scores pac-man donkey-kong]
-best-score = math/min[a: pac-man, b: donkey-kong]</code>
+        [#scores pac-man donkey-kong]
+        best-score = math/min[a: pac-man, b: donkey-kong]</code>
     </td>
   </tr>
 
@@ -277,8 +277,8 @@ best-score = math/min[a: pac-man, b: donkey-kong]</code>
     </td>
     <td>
       <code>// takes the lower score
-[#scores pac-man donkey-kong]
-worst-score = math/min[a: pac-man, b: donkey-kong]</code>
+        [#scores pac-man donkey-kong]
+        worst-score = math/min[a: pac-man, b: donkey-kong]</code>
     </td>
   </tr>
 
@@ -297,7 +297,7 @@ worst-score = math/min[a: pac-man, b: donkey-kong]</code>
     </td>
     <td>
       <code>// m is the remainder, 1
-m = math/mod[value: 5, by: 2]</code>
+        m = math/mod[value: 5, by: 2]</code>
     </td>
   </tr>
 
@@ -315,8 +315,8 @@ m = math/mod[value: 5, by: 2]</code>
     </td>
     <td>
       <code>// number of hours from the prime meridian
-[#city latitude longitude]
-hours-from-gmt = math/absolute[value: latitude] / 15</code>
+        [#city latitude longitude]
+        hours-from-gmt = math/absolute[value: latitude] / 15</code>
     </td>
   </tr>
 
@@ -335,8 +335,8 @@ hours-from-gmt = math/absolute[value: latitude] / 15</code>
     </td>
     <td>
       <code>// pi represented as the string "3.14"
-[#circle circumference diameter]
-pi = math/to-fixed[a: (circumference / diameter), b: 2]</code>
+        [#circle circumference diameter]
+        pi = math/to-fixed[a: (circumference / diameter), b: 2]</code>
     </td>
   </tr>
 
@@ -355,7 +355,7 @@ pi = math/to-fixed[a: (circumference / diameter), b: 2]</code>
     </td>
     <td>
       <code>// generates integers 1 through 10
-y = math/range[start: 1, stop: 10]</code>
+        y = math/range[start: 1, stop: 10]</code>
     </td>
   </tr>
 
@@ -373,15 +373,13 @@ y = math/range[start: 1, stop: 10]</code>
     </td>
     <td>
       <code>// generates a random number every second
-[#time minutes seconds]
-x = random/number[seed: seconds]</code>
+        [#time minutes seconds]
+        x = random/number[seed: seconds]</code>
     </td>
   </tr>
 </table>
 
-<h2>
-  Strings
-</h2>
+## Strings
 
 <table>
   <tr>
@@ -400,8 +398,8 @@ x = random/number[seed: seconds]</code>
     </td>
     <td>
       <code>// Americanized version of British spelling
-[#website body]
-american-version = string/replace[text: body, replace: "flavour", with: "flavor"]</code>
+        [#website body]
+        american-version = string/replace[text: body, replace: "flavour", with: "flavor"]</code>
     </td>
   </tr>
 
@@ -420,8 +418,8 @@ american-version = string/replace[text: body, replace: "flavour", with: "flavor"
     </td>
     <td>
       <code>// finds the 17th letter of the alphabet
-alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-letter = string/get[text: alphabet, at: 17]</code>
+        alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        letter = string/get[text: alphabet, at: 17]</code>
     </td>
   </tr>
 
@@ -439,7 +437,7 @@ letter = string/get[text: alphabet, at: 17]</code>
     </td>
     <td>
       <code>funny = "lol"
-really-funny = string/uppercase[text: funny]</code>
+        really-funny = string/uppercase[text: funny]</code>
     </td>
   </tr>
 
@@ -457,7 +455,7 @@ really-funny = string/uppercase[text: funny]</code>
     </td>
     <td>
       <code>really-funny = "LOL"
-down-a-notch = string/uppercase[text: really-funny]</code>
+        down-a-notch = string/uppercase[text: really-funny]</code>
     </td>
   </tr>
 
@@ -476,7 +474,7 @@ down-a-notch = string/uppercase[text: really-funny]</code>
     </td>
     <td>
       <code>// Eve is in developers, starting at an index of 2
-index = string/index-of[text: "developers", substring: "eve"</code>
+        index = string/index-of[text: "developers", substring: "eve"</code>
     </td>
   </tr>
 
@@ -494,8 +492,8 @@ index = string/index-of[text: "developers", substring: "eve"</code>
     </td>
     <td>
       <code>// the code point length of the word "unicode"
-string = "unicode"
-length-in-js = string/codepoint-length[text: string]</code>
+        string = "unicode"
+        length-in-js = string/codepoint-length[text: string]</code>
     </td>
   </tr>
 </table>
