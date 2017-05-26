@@ -256,5 +256,3 @@ chris := none</code></td>
   </tr>
 
 </table>
-
-<link rel="stylesheet" type="text/css" href="http://localhost:1313/docs/handbook/libraries/style.css">

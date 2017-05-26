@@ -498,5 +498,3 @@ title: "Standard Library"
     </td>
   </tr>
 </table>
-
-<link rel="stylesheet" type="text/css" href="style.css">
