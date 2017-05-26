@@ -4,10 +4,13 @@ title: "Standard Library"
 
 ##  Aggregates
 
-## gather/sort - Generates an ordering for a set
-
 <table>
 
+  <tr>
+    <td colspan="2">
+      <h3>gather/sort</h3> - Generates an ordering for a set
+    </td>
+  </tr>
   <tr>
     <td>
       <ul>
@@ -29,7 +32,7 @@ title: "Standard Library"
   </tr>
 
   <tr>
-    <td>
+    <td colspan="2">
       <h3>gather/count</h3> - Returns the number of elements in a set
     </td>
   </tr>
@@ -48,7 +51,7 @@ title: "Standard Library"
   </tr>
 
   <tr>
-    <td>
+    <td colspan="2">
       <h3>gather/sum</h3> - Returns the sum of values in a set of attributes
     </td>
   </tr>
@@ -69,13 +72,11 @@ title: "Standard Library"
   </tr>
 </table>
 
-<h2>
-  Math
-</h2>
+##  Math
 
 <table>
   <tr>
-    <td>
+    <td colspan="2">
       <h3>+</h3> - Adds two numbers
     </td>
   </tr>
@@ -90,7 +91,7 @@ title: "Standard Library"
   </tr>
 
   <tr>
-    <td>
+    <td colspan="2">
       <h3>-</h3> - Subtracts two numbers
     </td>
   </tr>
@@ -105,7 +106,7 @@ title: "Standard Library"
   </tr>
 
   <tr>
-    <td>
+    <td colspan="2">
       <h3>*</h3> - Multiplies two numbers
     </td>
   </tr>
@@ -120,7 +121,7 @@ title: "Standard Library"
   </tr>
 
   <tr>
-    <td>
+    <td colspan="2">
       <h3>/</h3> - Divides two numbers
     </td>
   </tr>
@@ -135,7 +136,7 @@ title: "Standard Library"
   </tr>
 
   <tr>
-    <td>
+    <td colspan="2">
       <h3>math/floor</h3> - Rounds a number down
     </td>
   </tr>
@@ -153,7 +154,7 @@ title: "Standard Library"
   </tr>
 
   <tr>
-    <td>
+    <td colspan="2">
       <h3>math/ceiling</h3> - Rounds a number up
     </td>
   </tr>
@@ -171,7 +172,7 @@ title: "Standard Library"
   </tr>
 
   <tr>
-    <td>
+    <td colspan="2">
       <h3>math/round</h3> - Rounds a number to the nearest integer
     </td>
   </tr>
@@ -189,7 +190,7 @@ title: "Standard Library"
   </tr>
 
   <tr>
-    <td>
+    <td colspan="2">
       <h3>math/sin</h3> - Sine of an angle
     </td>
   </tr>
@@ -207,7 +208,7 @@ title: "Standard Library"
   </tr>
 
   <tr>
-    <td>
+    <td colspan="2">
       <h3>math/cos</h3> - Cosine of an angle
     </td>
   </tr>
@@ -225,7 +226,7 @@ title: "Standard Library"
   </tr>
 
   <tr>
-    <td>
+    <td colspan="2">
       <h3>math/tan</h3> - Tangent of an angle
     </td>
   </tr>
@@ -243,7 +244,7 @@ title: "Standard Library"
   </tr>
 
   <tr>
-    <td>
+    <td colspan="2">
       <h3>math/max</h3> - The greater of two values
     </td>
   </tr>
@@ -263,7 +264,7 @@ title: "Standard Library"
   </tr>
 
   <tr>
-    <td>
+    <td colspan="2">
       <h3>math/min</h3> - The lesser of two values
     </td>
   </tr>
@@ -283,7 +284,7 @@ title: "Standard Library"
   </tr>
 
   <tr>
-    <td>
+    <td colspan="2">
       <h3>math/mod</h3> - Modulo division
     </td>
   </tr>
@@ -302,7 +303,7 @@ title: "Standard Library"
   </tr>
 
   <tr>
-    <td>
+    <td colspan="2">
       <h3>math/absolute</h3> - Absolute value of a number
     </td>
   </tr>
@@ -321,7 +322,7 @@ title: "Standard Library"
   </tr>
 
   <tr>
-    <td>
+    <td colspan="2">
       <h3>math/to-fixed</h3> - Formats a number as a string to a certain number of decimal places
     </td>
   </tr>
@@ -341,7 +342,7 @@ title: "Standard Library"
   </tr>
 
   <tr>
-    <td>
+    <td colspan="2">
       <h3>math/range</h3> - Generates a range of numbers
     </td>
   </tr>
@@ -360,7 +361,7 @@ title: "Standard Library"
   </tr>
 
   <tr>
-    <td>
+    <td colspan="2">
       <h3>random/number</h3> - Generates a random number between 1 and 0
     </td>
   </tr>
@@ -383,7 +384,7 @@ title: "Standard Library"
 
 <table>
   <tr>
-    <td>
+    <td colspan="2">
       <h3>string/replace</h3> - Replaces a string of text with another
     </td>
   </tr>
@@ -404,7 +405,7 @@ title: "Standard Library"
   </tr>
 
   <tr>
-    <td>
+    <td colspan="2">
       <h3>string/get</h3> - Gets a character from a specific location in a string
     </td>
   </tr>
@@ -424,7 +425,7 @@ title: "Standard Library"
   </tr>
 
   <tr>
-    <td>
+    <td colspan="2">
       <h3>string/uppercase</h3> -Converts a string to uppercase
     </td>
   </tr>
@@ -442,7 +443,7 @@ title: "Standard Library"
   </tr>
 
   <tr>
-    <td>
+    <td colspan="2">
       <h3>string/lowercase</h3> - Converts a string to lowercase
     </td>
   </tr>
@@ -460,7 +461,7 @@ title: "Standard Library"
   </tr>
 
   <tr>
-    <td>
+    <td colspan="2">
       <h3>string/index-of</h3> - Returns the position of the first occurrence of a specified value in a string
     </td>
   </tr>
@@ -479,7 +480,7 @@ title: "Standard Library"
   </tr>
 
   <tr>
-    <td>
+    <td colspan="2">
       <h3>string/codepoint-length</h3> - Returns the length of a string in Unicode code points.
     </td>
   </tr>
