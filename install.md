@@ -11,7 +11,7 @@ weight: 1
 Install [Node](https://nodejs.org/en/download/) for your platform, then clone and build the Eve starter repository:
 
 ```
-git clone git@github.com:witheve/eve-starter.git
+git clone https://github.com/witheve/eve-starter.git
 cd eve-starter
 npm install
 ```
