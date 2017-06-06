@@ -8,7 +8,7 @@ weight: 2
 
 # Quickstart
 
-In this guide we're going to give you a 5 minute introduction to the essential concepts in Eve. If you've never used Eve before, you're in the right place. Before you start with this tutorial, please follow the [installation and usage](../install) instructions, which will get you running Eve on your machine.
+In this guide we're going to give you a 5 - 10 minute introduction to the essential concepts in Eve. If you've never used Eve before, you're in the right place. Before you start with this tutorial, please follow the [installation and usage](../install) instructions, which will get you running Eve on your machine.
 
 ## Adding records to Eve
 
@@ -21,11 +21,11 @@ commit
 ~~~
 ``````
 
-This record committed by this block is tagged `#greeting`, and has an attribute "message" with the value "hello world". Although tags have a special syntax, they are attributes like any other. We encourage you to classify groups of related records with tags.
+The record committed by this block is tagged `#greeting`, and has an attribute "message" with the value "hello world". Tags are attributes like any other, their special syntax notwithstanding. We encourage you to use tags to classify groups of related records.
 
 ## Finding records in Eve
 
-Eve finds every record that matches the supplied patterns, then binds new records to them. If no records match the search, then the block does not run at all. A block will only run if every pattern in a search matches at least one record. Let's search for the `#greeting` we just committed, and then display it in a text container:
+Blocks search for records, and then bind or commit new records. Let's search for the `#greeting` we just committed, and then display it on the screen:
 
 ~~~eve
 search
@@ -35,11 +35,13 @@ bind
   [#ui/text text: message]
 ~~~
 
-Variables with the same name are equivalent within a block; because they have the same name, the `message` in `[#greeting message]` and `[#ui/text text: message]` are equivalent. Go ahead and add another `#greeting` record to the first block to see what happens when more than one record matches the search. 
+Searches find records that matches the supplied pattern, in this case records tagged greeting with a message attribute. You use these results to create new records. In this block, we create a `#ui/text` record for every message that is found. If no records match the search, the block has no effect. Try adding another `#greeting` record in the first block to see what happens when more than one record matches the search. 
+
+Variables with the same name are equivalent within a block; because they have the same name, the `message` in `[#greeting message]` and `[#ui/text text: message]` are equivalent.
 
 ## Records update as data changes
 
-Blocks in Eve react automatically to changes in data. When a record changes, any bound records are automatically updated. Let's search for the current time, and display it in a div:
+Blocks in Eve react automatically to changes in data. When a record changes, any bound records are automatically updated. Let's search for the current time, and display it on the screen:
 
 ~~~eve
 search
@@ -49,7 +51,7 @@ bind
   [#ui/text text: seconds]
 ~~~
 
-As the time changes, the output updates to reflect the current state of the `#time` record. Records can be committed instead of bound, but the behavior is a little different -- committed records persist until they are removed explicitly. Try changing `bind` to `commit` in the above block and see what happens.
+As the time changes, the output updates to reflect the current state of the `#time` record. Records can be committed instead of bound, but the behavior is a little different -- committed records persist until they are removed explicitly.
 
 ## Reacting to events
 
