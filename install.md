@@ -24,10 +24,11 @@ In the eve-starter directory, you can launch the Program Switcher:
 npm start
 ```
 
-This will open your browser to the Program Switcher, which allows you can run the programs located in the `eve-starter/programs` directory. You can place your own `*.eve` files in this directory and run them from the 
-Program Switcher, 
+This will open your browser to the Program Switcher, which allows you can run the programs located in the `eve-starter/programs` directory. You can place your own `*.eve` files in this directory and run them from the Program Switcher.
 
-You can also run a specific `*.eve` file by providing its path as an argument:
+### Running an Eve file
+
+Eve documents are written in Markdown, where Eve code is embedded in code blocks. You can run a specific `*.eve` file by providing its path as an argument:
 
 ```
 npm start -- path/to/program.eve
