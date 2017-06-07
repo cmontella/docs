@@ -8,11 +8,17 @@ weight: 2
 
 # Quickstart
 
-In this guide we're going to give you a 5 - 10 minute introduction to the essential concepts in Eve. If you've never used Eve before, you're in the right place. Before you start with this tutorial, please follow the [installation and usage](../install) instructions, which will get you running Eve on your machine.
+This guide is a 5 - 10 minute introduction to the essential concepts in Eve. If you've never used Eve before, you're in the right place! Before you start with this tutorial, please follow the [installation and usage](../install) instructions, which will get you running Eve programs on your machine. In the eve-starter/programs directory, create an empty document called "quickstart.eve". Use your favorite editor to edit the program, and run it with the command:
+
+```
+npm start -- eve-starter/programs/quickstart.eve
+``` 
+
+Eve documents are written in Markdown. Eve code is written in blocks, delinated by Markdown code fences (matching pairs of ``` or ~~~ surrounding a section of code). These blocks of code search for and create records, which are key value pairs attached to a unique ID.
 
 ## Adding records to Eve
 
-Eve programs are made up of small, composasble blocks of code that are embedded in a Markdown document. Eve blocks (delineated by a Markdown code fence) search for and create records, which are key value pairs attached to a unique ID. Let's start with a block that adds a record to Eve (we'll show the code fence in this block, but elide them in later blocks):
+Let's start with a block that adds a record to Eve (we'll show the code fence in this block, but elide them in later blocks):
 
 ``````
 ~~~
@@ -74,7 +80,7 @@ commit
 
 Clicks only last for an instant, but we want to create a permanent record of each click so we can search for them later. This block commits a `#clicked` record that will persist until it's explicitly removed. Much like the `#greeting` text we bound to the `#ui`, variables with the same name are equivalent, so the variable `event` in the `#clicked` record is a reference to the `#html/event/click` on the `#increment` button.
 
-The identity of a record is determined by its attribute/value pairs. Two records with the same attributes and values are identical in Eve. We included the `event` attribute in the `#clicked` record to differentiate each record. Without this differentiation, we could only ever create a single `#clicked` record. Try removing `event` from the record and click the button to test this out.
+The identity of a record is determined by its attribute/value pairs. Two records with the same attributes and values are identical in Eve. We included the `event` attribute in the `#clicked` record to differentiate each record. Without this differentiation, we could only ever create a single `#clicked` record.
 
 ## Count the number of clicks
 
