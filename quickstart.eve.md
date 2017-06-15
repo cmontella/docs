@@ -41,7 +41,7 @@ bind
   [#ui/text text: message]
 ~~~
 
-Searches find records that matches the supplied pattern, in this case records tagged greeting with a message attribute. You use these results to create new records. In this block, we create a `#ui/text` record for every message that is found. If no records match the search, the block has no effect. Try adding another `#greeting` record in the first block to see what happens when more than one record matches the search. 
+Searches find records that matches the supplied pattern, in this case records tagged greeting with a message attribute. You use these results to create new records. In this block, we create a `#ui/text` record for every message that is found (the UI library looks for records tagged `#ui/text` and draws them as DOM elements in the browser). If no records match the search, the block has no effect. Try adding another `#greeting` record in the first block to see what happens when more than one record matches the search. 
 
 Variables with the same name are equivalent within a block; because they have the same name, the `message` in `[#greeting message]` and `[#ui/text text: message]` are equivalent.
 
