@@ -47,7 +47,14 @@ Variables with the same name are equivalent within a block; because they have th
 
 ## Records update as data changes
 
-Blocks in Eve react automatically to changes in data. When a record changes, any bound records are automatically updated. Let's search for the current time, and display it on the screen:
+Blocks in Eve react automatically to changes in data. When a record changes, any bound records are automatically updated. We can see this in action by outputting the current time. First we create a timer that ticks once every second:
+
+~~~eve
+commit
+  [#time #system/timer resolution: 1000]
+~~~
+
+Now we can search for the current time, and display it on the screen:
 
 ~~~eve
 search
@@ -113,10 +120,3 @@ This will get you started with Eve, but there's still more to learn. From here, 
 - View the [syntax reference](../syntaxreference) or the [library reference](../handbook/libraries).
 - Explore already made [examples](https://github.com/witheve/eve-examples).
 - Or dive right in to the editor and try out the concepts you've just learned (coming soon).
-
-## Appendix
-
-~~~eve
-commit
-  [#time #system/timer resolution: 1000]
-~~~
